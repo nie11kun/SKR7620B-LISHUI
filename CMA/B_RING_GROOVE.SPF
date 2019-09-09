@@ -1,0 +1,68 @@
+PROC B_RING_GROOVE DISPLON
+;**********程序功能**********
+;*环形槽
+;****************************
+
+IF $A_DBB[0]<>0;
+    B_SCREW;
+    GOTOF RING_ENDING
+ENDIF
+
+IF $A_DBB[1]<>0;
+    RET
+ENDIF
+
+IF $A_DBB[5]<>0;
+    RET
+ENDIF
+
+INI[0]=0;
+INI[26]=1;
+WORK[0]=1;
+INI[17]=0;
+INI[18]=0;
+INI[19]=0;
+
+RING[4]=RING[3]-RING[2]+1;
+RING[5]=0;
+
+WHILE(RING[5]<RING[4]);
+    C_RING_RELATED_POS(RING[2]+RING[5],RING[6],RING[7]);
+    B_SCREW;
+    IF (DRESSER[6]<>0) OR ($A_DBB[2]==1);
+        GOTOF RING_ENDING
+    ENDIF
+    STOPRE
+    RING[5]=RING[5]+1;
+    STOPRE
+ENDWHILE
+
+IF INI[26]<>0;
+    INI[73]=INI[73]+1;
+ENDIF
+
+IF (INI[74]<>0) AND (INI[73]>=INI[74]);
+    IF INI[73]/INI[74]-TRUNC(INI[73]/INI[74])==0
+        INI[75]=1;
+    ENDIF
+ENDIF
+
+RING_ENDING:
+DO MOV[C]=1 FA[C]=3600
+G4 F0.5
+DO MOV[C]=0;
+M9;
+M29;
+M57;
+F_GRINDWHEEL_STOP;
+F_DRESSWHEEL_STOP;
+IF (INI[70]==1) AND (GRIND[2]<>2);
+    M47;
+    WHILE($A_DBB[9]==0);
+        G4 F0.2
+    ENDWHILE
+ENDIF
+C_ALARM;
+
+RET
+

@@ -1,0 +1,20 @@
+PROC F_PROBE_DBB_OUT(REAL PROBE_CHOICE) DISPLOF
+;***********程序功能**********
+;*测量机构伸出到位DBB信号
+;
+;****************************
+
+;IF PROBE_CHOICE==0;
+;    WHILE($A_DBB[8]==0);
+;        G4 F0.2
+;    ENDWHILE
+;ELSE
+;    WHILE($A_DBB[21]==0);
+;        G4 F0.2
+;    ENDWHILE
+;ENDIF
+
+G4 F1
+
+RET
+

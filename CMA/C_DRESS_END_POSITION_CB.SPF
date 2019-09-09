@@ -1,0 +1,23 @@
+PROC C_DRESS_END_POSITION_CB DISPLOF
+;***********程序功能**********
+;*修整结束移动位置
+;****************************
+
+;
+MSG("砂轮架离开中");
+IF GRIND[0]<>1;
+    G1 G90 X=WHEEL[10]+2 F=INI[55];
+ELSE
+    G1 G90 X=WHEEL[10]-2 F=INI[55];
+ENDIF
+;
+MSG("台面离开中");
+IF GRIND[0]<>1;
+    G90 G1 Z=INI[6] F=INI[56]
+ELSE
+    G90 G1 Z=INI[28] F=INI[56]
+ENDIF
+C_ROTATE_ANGLE;
+
+RET
+

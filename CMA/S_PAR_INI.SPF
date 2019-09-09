@@ -1,0 +1,44 @@
+PROC S_PAR_INI SBLOF DISPLOF
+;***********程序功能**********
+;*参数初始化:
+;*各种参数初始化赋值，判断及运算
+;****************************
+
+DRFOF;
+
+;
+DRESSER[6]=0;
+TECHNOLOGY[263]=0;
+TECHNOLOGY[264]=0;
+
+IF INI[70]==1;
+	IF (GRIND[2]==0) OR (GRIND[2]==2);
+		M48;
+		WHILE($A_DBB[10]==0);
+			G4 F0.2
+		ENDWHILE
+	ENDIF
+ENDIF
+
+;
+INI[7]=PROCESS[47]+0.1;
+INI[6]=PROCESS[34]+PROCESS[55];
+INI[3]=INI[7]-INI[6];
+
+PROCESS[107]=0;
+PROCESS[108]=PROCESS[20];
+
+;
+PROCESS[18]=0;
+
+;
+IF INI[3]<=0;
+	DRESSER[6]=1;
+ENDIF
+
+IF DRESSER[91]<DRESSER[137];
+	DRESSER[6]=9;
+ENDIF
+
+RET
+

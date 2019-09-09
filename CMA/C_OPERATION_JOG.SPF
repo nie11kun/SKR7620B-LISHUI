@@ -1,0 +1,69 @@
+PROC C_OPERATION_JOG DISPLOF
+;***********程序功能**********
+;*螺纹手动对刀
+;****************************
+
+DEF REAL POINT_1,POINT_2,POINT_3,POINT_4
+
+POINT_1=INI[6]-R202/360*INI[5]
+POINT_2=POINT_1-R206/360*INI[5]
+
+POINT_4=INI[7]+R203/360*INI[5]
+POINT_3=POINT_4+R207/360*INI[5]
+
+;*********************
+;
+;*********************
+
+
+DDD0:
+;
+MSG("正在开至工件起点");
+;*********************
+;
+F_Z_POSITION(INI[28]);
+;*********************
+GOTOF DDD3
+
+;*********************
+;
+;*********************
+
+DDD3:
+;
+MSG("X轴开至对刀起始位");
+G01 G90 X=INI[10] F=INI[55];
+
+;*********************
+F_Z_POSITION(INI[6]);
+;*********************
+
+;
+
+G90 G01 C=ACP(TOOL_SET[4]) F=INI[58];
+
+STOPRE
+TOOL_SET[5]=$AA_IM[C];
+TOOL_SET[0]=$AA_IM[Z];
+
+IF TOOL_SET[57]==1
+	G01 G90 X=PROCESS[13] F=200;第二件对刀X定位
+ENDIF
+
+;
+MSG("手动对刀已启动,请进行对刀操作");
+IF INI[109]==0;
+    IF R201<>0
+        F_ZC_START_INPUT_TAPER(INI[6],POINT_1,POINT_2,POINT_3,POINT_4,INI[7],INI[5],INI[80],R204,R205)
+    ELSE
+        F_ZC_START(TOOL_SET[0],INI[7],INI[5],INI[80],1)
+    ENDIF
+ELSE
+    M0
+    STOPRE
+    R280=$AA_IM[X]
+    R281=$AA_IM[Z]
+ENDIF
+
+RET
+

@@ -1,0 +1,32 @@
+PROC C_EXITWORK DISPLOF
+;***********程序功能**********
+;*退出工件动作
+;****************************
+
+;
+MSG("退刀中,请勿复位程序!");
+IF GRIND[0]<>1;
+    IF GRIND[2]<>2;
+        G01 G90 X=INI[23] F=INI[54];
+    ENDIF
+ELSE
+    IF GRIND[2]<>2;
+        IF INI[84]==0
+            G90 G01 X=INI[10] F=PROCESS[11]*4;
+        ELSE
+            G91 G01 X0.05 F20
+        ENDIF
+        IF INI[84]==0;
+            G90 G01 Z=INI[6] F=INI[56];
+        ELSE
+            F_ZC_START(INI[7],INI[6],INI[5],INI[135]*INI[5],1)
+        ENDIF
+        G90 G01 Z=INI[28] F=INI[56];
+        G90 G01 X=INI[23] F=INI[54]
+    ELSE
+;
+    ENDIF
+ENDIF
+
+RET
+

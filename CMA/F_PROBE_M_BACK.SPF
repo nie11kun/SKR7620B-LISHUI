@@ -1,0 +1,14 @@
+PROC F_PROBE_M_BACK(REAL PROBE_CHOICE) DISPLOF
+;***********程序功能**********
+;*测量机构缩回M代码
+;
+;****************************
+
+IF PROBE_CHOICE==0;
+    M34;
+ELSE
+    M91
+ENDIF
+
+RET
+

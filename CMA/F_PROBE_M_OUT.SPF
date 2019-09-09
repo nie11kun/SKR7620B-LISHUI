@@ -1,0 +1,14 @@
+PROC F_PROBE_M_OUT(REAL PROBE_CHOICE) DISPLOF
+;***********程序功能**********
+;*测量机构伸出M代码
+;
+;****************************
+
+IF PROBE_CHOICE==0;
+    M33;
+ELSE
+    M90
+ENDIF
+
+RET
+

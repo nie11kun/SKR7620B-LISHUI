@@ -1,0 +1,25 @@
+PROC E_PROBE_DETECTING_ZMOVE(REAL Z_VALUE,REAL SPEED) DISPLOF
+;***********程序功能**********
+;*开关检测C的动作
+;
+;
+;****************************
+
+IF TOOL_SET[55]==0;
+    IF TOOL_SET[51]==0;
+        MEAS=1 G91 G01 Z=Z_VALUE F=SPEED
+    ELSE
+        MEAS=2 G91 G01 Z=Z_VALUE F=SPEED
+    ENDIF
+ELSE
+    IF TOOL_SET[52]==0;
+        MEAS=1 G91 G01 Z=Z_VALUE F=SPEED
+    ELSE
+        MEAS=2 G91 G01 Z=Z_VALUE F=SPEED
+    ENDIF
+ENDIF
+
+STOPRE
+
+RET
+

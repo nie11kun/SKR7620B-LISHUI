@@ -1,0 +1,476 @@
+﻿<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset="UTF-8"/>
+        <title>自动对刀</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    </head>
+    
+    <body>
+        <div class="head1"><a href="index.html">HMI界面参数定义</a>
+            <hr>
+            <div class="head2">自动对刀
+                <hr>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D1">对刀结果调整</a></td>
+                            <td>推荐设置：根据偏刀情况</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        完成自动对刀进行磨削后，根据磨削的偏刀情况，用此参数来调整<br>
+                    </p>
+                </div>
+
+                <!--removed-->
+
+                <!--ifIsInternalBegin-->
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D5">Z轴测量起点</a></td>
+                            <td>推荐设置：工件在测头外50mm左右位置</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        手动开动机床，将测头伸出后使工件在Z轴方向距离测头一段距离，记录Z轴坐标<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D6">测量水平距</a></td>
+                            <td>推荐设置：无</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        此参数将影响磨削是否偏刀<br>
+                        推荐测量方法：<br>
+                        开动机床，将测头/开关接触工件右侧端面记录Z轴坐标Z1<br>
+                        开动机床，将砂轮齿顶对准工件右端面记录Z轴坐标Z2<br>
+                        测头半径R1,则测量水平距=绝对值(Z1-R1-Z2)<br>
+                    </p>
+                </div>
+
+                <!--removed-->
+
+                <!--ifIsCeTouCeLiangBegin-->
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D8">反向孔角度</a></td>
+                            <td>推荐设置：保证测头能正常进入孔内</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        此参数为测量反相器孔时C轴转动的角度，此位置需保证测头进入后在孔的中部<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D10">外圆直径</a></td>
+                            <td>推荐设置：测量工件</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        此参数会影响测量工件端面及外圆时的位置，为避免测量有误，需输入准确<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D11">测头半径</a></td>
+                            <td>推荐设置：根据图纸</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        根据测头图纸正确输入参数<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D12">反向孔位置</a></td>
+                            <td>推荐设置：保证测头能正常进入孔内</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        此参数为测量反相器孔时端面到孔的距离，此位置需保证测头进入后在孔的中部<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D13">缺口深</a></td>
+                            <td>推荐设置：根据工件类型</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        如果孔侧有开口，为保证测量正常进行，需设置此参数，测量时测头会避开此缺口<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D14">反向孔类型</a></td>
+                            <td>推荐设置：根据工件类型</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td>圆孔/腰型孔</td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        根据工件类型选择<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D15">腰型孔角度</a></td>
+                            <td>推荐设置：根据工件类型</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td>0~180</td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        根据界面图片提示设置，一般右旋工件此处角度大于90度，左旋工件此处角度小于90度<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D16">腰型孔长</a></td>
+                            <td>推荐设置：根据工件类型</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td>大于零</td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        根据工件图纸，或手动测量<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D17">腰型孔宽</a></td>
+                            <td>推荐设置：根据工件类型</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td>大于零</td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        根据工件图纸，或手动测量<br>
+                    </p>
+                </div>
+                <!--removed-->
+                <!--ifIsCeTouCeLiangEnd-->
+                <!--ifIsInternalEnd-->
+
+                <!--ifIsCenterBegin-->
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D19">圆孔是否在左端面</a></td>
+                            <td>推荐设置：根据工件图纸</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td>是/否</td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        用于切换测量孔在工件外圆上还是在左端面上<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D20">外圆跳动阈值</a></td>
+                            <td>推荐设置：0.08</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td>0~0.5</td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        测量外圆时，如果跳动大于阈值则报警<br>
+                        参数右侧值为自动测量值<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D22">左端面测量角度</a></td>
+                            <td>推荐设置：保证测头测量时不干涉</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td>0~360</td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        测量左端面时，C轴合适角度，使测头能正常测量端面<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D23">外圆测量角度</a></td>
+                            <td>推荐设置：保证测头测量时不干涉</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td>0~360</td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        测量外圆时，C轴合适角度，使测头能正常测量外圆<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D24">测头中心位</a></td>
+                            <td>推荐设置：无</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        测头在工件中心时，X轴坐标<br>
+                        可以通过测头接触工件外圆坐标加上工件半径计算得到<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D27">工件耳高</a></td>
+                            <td>推荐设置：根据图纸</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        工件左端面耳高,根据工件图纸或手动测量<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D28">工件外圆长度</a></td>
+                            <td>推荐设置：根据图纸</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        此参数为更换新工件后，第一次测量时候测量左端面使用，手动测量后输入<br>
+                        右侧参数为自动测量出的工件长度，可做比较<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D29">变螺距使能</a></td>
+                            <td>推荐设置：根据工件</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td>开/关</td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        此参数为加工变螺距工件时使用，需设置相关参数<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D30">螺距变换值</a></td>
+                            <td>推荐设置：根据螺距变换段</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td>大于零</td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        根据图纸，螺距变换段的螺距设置在此<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D31">孔1距右端面</a></td>
+                            <td>推荐设置：根据图纸</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td>大于零</td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        此参数为自动测量时使用<br>
+                        根据图纸或手动测量，螺距变换起始反相器孔距离右端面长度<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D32">孔1测量角度</a></td>
+                            <td>推荐设置：根据图纸</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td>大于零</td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        此参数为自动测量时使用<br>
+                        根据图纸或手动测量，螺距变换起始反相器孔测量时合适角度，使测头可以进入<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D33">变螺距角度</a></td>
+                            <td>推荐设置：根据图纸</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td>大于零</td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        螺距变换段的总角度，磨削时，从变换起始位置开始使用变换后的螺距磨削此角度后恢复默认螺距<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D34">坐标变换位1</a></td>
+                            <td>推荐设置：测量或手动输入</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        螺纹加工到此Z轴坐标后开始变换螺距，此处可以通过手动对出来或者自动测量<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D35">坐标变换位2</a></td>
+                            <td>推荐设置：自动计算</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        螺纹加工到此Z轴坐标后变换结束，此处为根据变换位1和变螺距角度自动计算出来<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D36">外圆跳动测量</a></td>
+                            <td>推荐设置：是</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td>是/否</td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        测量时是否通过三点测量外圆圆度，如果大于跳动阈值则产生报警<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D37">右端测量设置</a></td>
+                            <td>推荐设置：手动测量后设置</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        手动用测头接触工件右端面后将结果输入此处，当测量结果与此值相差大于测量阈值后会产生报警<br>
+                    </p>
+                </div>
+                <div class="parameterCell">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <td><a class="var_mark" name="S5D38">右端测量阈值</a></td>
+                            <td>推荐设置：0.05</td>
+                        </tr>
+                        <tr>
+                            <td>取值范围</td>
+                            <td>0~0.5</td>
+                        </tr>
+                    </table>
+                    <p class="parameterExplain">
+                        右侧参数为自动测量结果与设定值计算出的差值<br>
+                        当自动测量右端面结果与右端测量设置相差大于测量阈值后会产生报警<br>
+                        测量后大于阈值一般是因为工件过长或放置未到位，检查工件或手动修改右端测量设置后继续<br>
+                    </p>
+                </div>
+                <!--ifIsCenterEnd-->
+            </div>
+        </div>
+    </body>
+</html>

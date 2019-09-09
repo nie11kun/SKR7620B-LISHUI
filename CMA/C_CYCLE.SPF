@@ -1,0 +1,107 @@
+PROC C_CYCLE DISPLON
+;***********程序功能**********
+;*螺纹磨削循环:
+;*螺纹磨削初始走位及子程序的调用,磨削中修整的调用
+;****************************
+
+IF TECH_TIME[0]+TECH_TIME[1]+TECH_TIME[2]+TECH_TIME[3]+TECH_TIME[4]==0
+    RET
+ENDIF
+
+IF INI[75]==1;
+    INI[75]=0;
+
+    ;********************
+    F_Z_POSITION(INI[28]);
+    ;*********************
+
+    M9;
+    B_DRESS;
+    IF DRESSER[6]<>0;
+        RET
+    ENDIF
+    C_LINESPEED_GRIND;
+ENDIF
+
+IF (TECH_TIME[0]+TECH_TIME[1]+TECH_TIME[2]+TECH_TIME[3]+TECH_TIME[4]==1) OR (INI[72]==1);
+    
+    ;**********************
+    ;
+
+    ;
+    IF RING[0]==0;
+        D_GRIND_INIT_POSITION(INI[28],INI[10],INI[56],INI[55]);
+        G01 G90 Z=INI[6] F=INI[56]
+    ELSE
+        IF $AA_IM[X]<>INI[10];
+            D_GRIND_INIT_POSITION(INI[28],INI[10],INI[56],INI[55]);
+            G01 G90 Z=INI[6] F=INI[56]
+        ENDIF
+        G01 G90 Z=INI[6] F=INI[57]
+    ENDIF
+    ;
+    ;*********************
+
+ENDIF
+
+M8;
+
+IF RING[0]==0;
+;
+        D_GRIND;
+;
+;
+;
+ELSE
+    D_GRIND_RING;
+ENDIF
+PLCASUP1;
+
+IF INI[47]==0;
+    PROCESS[14]=PROCESS[14]+PROCESS[8];
+ENDIF
+
+IF $A_DBB[2]==1;
+    RET
+ENDIF
+
+;
+
+IF PROCESS[3]==1
+
+    ;********************
+    F_Z_POSITION(INI[28]);
+    ;*********************
+
+    M9;
+    B_DRESS;
+    PROCESS[3]=0;
+    IF DRESSER[6]<>0;
+        RET
+    ENDIF
+    INI[72]=1;
+    C_LINESPEED_GRIND;
+ENDIF
+
+;
+
+IF (TECH_TIME[0]+TECH_TIME[1]+TECH_TIME[2]+TECH_TIME[3]+TECH_TIME[4]==TECHNOLOGY[10]+TECHNOLOGY[11]+TECHNOLOGY[12]+TECHNOLOGY[13]+DIY[1]);
+    M9;
+
+    ;*********************
+    IF RING[0]==0;
+;
+        D_GRIND_INIT_POSITION(INI[28],INI[23],INI[56],INI[55]);
+    ELSE
+        IF RING[5]==RING[4]-1;
+;
+            D_GRIND_INIT_POSITION(INI[28],INI[23],INI[56],INI[55]);
+        ENDIF
+    ENDIF
+
+    ;*********************
+
+ENDIF
+
+RET
+

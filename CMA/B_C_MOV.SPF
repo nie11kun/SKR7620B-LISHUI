@@ -1,0 +1,24 @@
+PROC B_C_MOV DISPLOF
+;***********程序功能**********
+;*C轴旋转动作
+;****************************
+
+IF $A_DBB[6]==2;
+    F_GRINDWHEEL_RUN(INI[81]);
+
+;
+    MSG("头架旋转中...");
+    IF GRIND[0]<>1;
+        DO MOV[C]=1 FA[C]=INI[58];
+    ELSE
+        DO MOV[C]=-1 FA[C]=INI[58];
+    ENDIF
+
+    DELAY_TIME:
+    G4 F999999
+    GOTOB DELAY_TIME
+
+ENDIF
+
+RET
+
