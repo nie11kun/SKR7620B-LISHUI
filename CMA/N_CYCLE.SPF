@@ -28,6 +28,15 @@ IF (TECHNOLOGY[98]+TECHNOLOGY[100]==1) OR (INI[72]==1);
     ELSE
         G01 Z=PROCESS[37]+1 F=INI[56] ;
     ENDIF
+
+    IF INI[156]==0;工件是否在旋转(0未旋转1旋转中)
+        INI[156]=1
+        M3 S=30;头架启动
+        G4 F0.5
+        M3 S=60;头架启动
+        G4 F0.5
+    ENDIF
+
     M3 S=PROCESS[38];
     M38;
 ;

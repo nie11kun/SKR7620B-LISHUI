@@ -15,14 +15,6 @@ MOVE_LENGTH=INI[30]/INI[145];
 
 INI[96]=1;
 
-IF INI[156]==0;工件是否在旋转(0未旋转1旋转中)
-	INI[156]=1
-	M3 S=30;头架启动
-	G4 F0.5
-	M3 S=60;头架启动
-	G4 F0.5
-ENDIF
-
 M3 S=PROCESS[29];
 
 G90 G01 Z=INI[7] F=INI[56];

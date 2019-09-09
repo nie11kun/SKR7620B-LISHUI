@@ -23,6 +23,15 @@ IF (TECH_TIME[5]+TECH_TIME[6]+TECH_TIME[7]+TECH_TIME[8]+TECH_TIME[9]==1) OR (INI
 ;
     MSG("台面到磨削起点");
     G90 G01 Z=INI[7] F=INI[56];
+
+    IF INI[156]==0;工件是否在旋转(0未旋转1旋转中)
+        INI[156]=1
+        M3 S=30;头架启动
+        G4 F0.5
+        M3 S=60;头架启动
+        G4 F0.5
+    ENDIF
+
     M3 S=PROCESS[29];
     M38;
 ;
