@@ -11,7 +11,7 @@ IF INI[16]==1
 		;WHILE($A_DBB[14]==0);
 		;	G4 F0.2
 		;ENDWHILE
-		G4 F2
+		G4 F1
 ;
 		MSG("螺旋升角到位中");
 		G90 G01 A=INI[20]-1 F=INI[60]
