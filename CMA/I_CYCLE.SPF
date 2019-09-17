@@ -92,18 +92,10 @@ IF (TECH_TIME[5]+TECH_TIME[6]+TECH_TIME[7]+TECH_TIME[8]+TECH_TIME[9]==TECHNOLOGY
             G90 G01 AX[AXNAME(AXIS_EW)]=INI[107] F=INI[54];
         ENDIF
     ELSE
-        IF (PROCESS[45]==1) OR (PROCESS[94]==1);
-            IF PROCESS[57]==1;
-                G90 G01 AX[AXNAME(AXIS_EW)]=PROCESS[20]+2 F=INI[105]/4;
-            ELSE
-                G90 G01 AX[AXNAME(AXIS_EW)]=PROCESS[20]-2 F=INI[55]/4;
-            ENDIF
+        IF PROCESS[57]==1;
+            G90 G01 AX[AXNAME(AXIS_EW)]=PROCESS[20]+2 F=INI[105]/4;
         ELSE
-            IF PROCESS[57]==1;
-                G90 G01 AX[AXNAME(AXIS_EW)]=PROCESS[20]+INI[43]+2 F=INI[105]/2;
-            ELSE
-                G90 G01 AX[AXNAME(AXIS_EW)]=PROCESS[20]-INI[43]-2 F=INI[55]/2;
-            ENDIF
+            G90 G01 AX[AXNAME(AXIS_EW)]=PROCESS[20]-2 F=INI[55]/4;
         ENDIF
         G4 F0.2
     ENDIF
