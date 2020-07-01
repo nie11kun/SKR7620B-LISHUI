@@ -93,6 +93,12 @@
 	VS7=($85379,ac7,se1);
 ;
 
+	LOAD
+		IF (VAR1.VAL<>1)AND(VAR1.VAL<>4)
+			VAR1.VAL=1
+		ENDIF
+	END_LOAD
+	
 	PRESS(HS1)
 		IF TYPE.VAL<>1
 			LM("MASK1","grind.com")
