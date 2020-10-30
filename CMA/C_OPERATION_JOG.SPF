@@ -46,7 +46,7 @@ ENDIF
 ;
 MSG("手动对刀已启动,请进行对刀操作");
 IF INI[109]==0;
-    IF R201<>0
+    IF R240<>0
         F_ZC_START_INPUT_TAPER(INI[6],INI[7],INI[5],INI[80])
     ELSE
         F_ZC_START(TOOL_SET[0],INI[7],INI[5],INI[80],1)
