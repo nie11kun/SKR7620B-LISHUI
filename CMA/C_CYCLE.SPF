@@ -27,10 +27,11 @@ IF (TECH_TIME[0]+TECH_TIME[1]+TECH_TIME[2]+TECH_TIME[3]+TECH_TIME[4]==1) OR (INI
     
     ;**********************
     ;
-    M8;
+    ;M8;
     ;
     IF RING[0]==0;
         D_GRIND_INIT_POSITION(INI[28],INI[10],INI[56],INI[55]);
+        M8
         G90 G01 C=ACP(INI[27]) F=INI[58];
         G01 G90 Z=INI[6] F=INI[56]
     ELSE
@@ -45,7 +46,7 @@ IF (TECH_TIME[0]+TECH_TIME[1]+TECH_TIME[2]+TECH_TIME[3]+TECH_TIME[4]==1) OR (INI
 
 ENDIF
 
-M8;
+;M8;
 
 IF RING[0]==0;
 ;
