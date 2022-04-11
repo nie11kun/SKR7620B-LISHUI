@@ -11,24 +11,24 @@
 	DEF X_IM=(R///$85118,$85118,,/WR1//"$AA_IM[X]"/10,10,20/30,10,60/3);
 	DEF Z_IM=(R///$85119,$85119,,/WR1//"$AA_IM[Z]"/10,30,20/30,30,60/3);
 
-	DEF VAR12=(R/-800,800//$85601,$85601,,$85043/WR2/"panel_12_7_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[3]"/330,20,110/440,20,110//"UserGuide/section_4.html","S4D12");
-	DEF para_switch2=(I/*0=$85058,1=$85059//$85063,$85063,,/WR2/"panel_12_7_chs.png"/"/NC/_N_NC_GD2_ACX/PARA_LOCK_SWITCH[11]"/0,0,0/530,20,18/);
+	DEF VAR12=(R/-800,800//$85601,$85601,,$85043/WR2,ac4/"panel_12_7_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[3]"/330,20,110/440,20,110//"UserGuide/section_4.html","S4D12");
+	DEF para_switch2=(I/*0=$85058,1=$85059//$85063,$85063,,/WR2,ac4/"panel_12_7_chs.png"/"/NC/_N_NC_GD2_ACX/PARA_LOCK_SWITCH[11]"/0,0,0/530,20,18/);
 
-	DEF VAR11=(R/-2000,2000//$85607,$85626,,$85043/WR2/"panel_12_1_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[22]"/330,40,110/440,40,110//"UserGuide/section_4.html","S4D13");
-	DEF para_switch=(I/*0=$85058,1=$85059//$85063,$85063,,/WR2/"panel_12_1_chs.png"/"/NC/_N_NC_GD2_ACX/PARA_LOCK_SWITCH[4]"/0,0,0/530,40,18/);
+	DEF VAR11=(R/-2000,2000//$85607,$85626,,$85043/WR2,ac4/"panel_12_1_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[22]"/330,40,110/440,40,110//"UserGuide/section_4.html","S4D13");
+	DEF para_switch=(I/*0=$85058,1=$85059//$85063,$85063,,/WR2,ac4/"panel_12_1_chs.png"/"/NC/_N_NC_GD2_ACX/PARA_LOCK_SWITCH[4]"/0,0,0/530,40,18/);
 
 	DEF VAR0=(R/0,300//$85614,$85614,,$85043/WR4//""/330,60,110/440,60,110/);
 
-	DEF VAR1=(R/0,10//$85612,$85612,,$85043/WR2/"panel_12_2_chs.png"/"/NC/_N_NC_GD2_ACX/WHEEL[5]"/330,90,110/440,90,110//"UserGuide/section_4.html","S4D1");
+	DEF VAR1=(R/0,10//$85612,$85612,,$85043/WR2,ac4/"panel_12_2_chs.png"/"/NC/_N_NC_GD2_ACX/WHEEL[5]"/330,90,110/440,90,110//"UserGuide/section_4.html","S4D1");
 	DEF VAR2=(R/0,10//$85611,$85611,,$85043/WR4//"/NC/_N_NC_GD2_ACX/WHEEL[6]"/330,110,110/440,110,110/);
 
 	DEF VAR3=(R///$85627,$85627,,$85043/WR1/"panel_12_3_chs.png"/"/NC/_N_NC_GD2_ACX/WHEEL[13]"/330,140,110/440,140,110//"UserGuide/section_4.html","S4D14");
 	DEF VAR4=(R///$85630,$85630,,$85043/WR4//"/NC/_N_NC_GD2_ACX/WHEEL[14]"/330,160,110/440,160,110/);
 
-	DEF VAR5=(R///$85628,$85628,,$85043/WR2/"panel_12_4_chs.png"/"/NC/_N_NC_GD2_ACX/WHEEL[11]"/330,190,110/440,190,110//"UserGuide/section_4.html","S4D15");
+	DEF VAR5=(R///$85628,$85628,,$85043/WR2,ac4/"panel_12_4_chs.png"/"/NC/_N_NC_GD2_ACX/WHEEL[11]"/330,190,110/440,190,110//"UserGuide/section_4.html","S4D15");
 	DEF VAR6=(R///$85632,$85632,,$85043/WR4//"/NC/_N_NC_GD2_ACX/WHEEL[12]"/330,210,110/440,210,110/);
 
-	DEF VAR7=(R/0,500//$85620,$85620,,$85043/WR2/"panel_12_5_chs.png"/"/NC/_N_NC_GD2_ACX/WHEEL[1]"/330,240,110/440,240,110//"UserGuide/section_4.html","S4D4");
+	DEF VAR7=(R/0,500//$85620,$85620,,$85043/WR2,ac4/"panel_12_5_chs.png"/"/NC/_N_NC_GD2_ACX/WHEEL[1]"/330,240,110/440,240,110//"UserGuide/section_4.html","S4D4");
 	DEF VAR8=(R/0,60//$85621,$85621,,$85046/WR2/"panel_12_6_chs.png"/"/NC/_N_NC_GD2_ACX/WHEEL[2]"/330,260,110/440,260,110//"UserGuide/section_4.html","S4D5");
 	
 	DEF DWHEEL_RPM=(I/0,//$85600,$85600,,$85044/WR1//"/NC/_N_NC_GD2_ACX/WHEEL[20]"/330,280,110/440,280,110/);
@@ -534,16 +534,16 @@
 	DEF X_IM=(R///$85118,$85118,,/WR1//"$AA_IM[X]"/10,10,20/30,10,60/3);
 	DEF Z_IM=(R///$85119,$85119,,/WR1//"$AA_IM[Z]"/10,30,20/30,30,60/3);
 
-	DEF VAR0=(R/-800,800//$85601,$85601,,$85043/WR2/"panel_17_2_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[3]"/325,40,110/440,40,110//"UserGuide/section_4.html","S4D12");
-	DEF para_switch1=(I/*0=$85058,1=$85059//$85063,$85063,,/WR2/"panel_17_2_chs.png"/"/NC/_N_NC_GD2_ACX/PARA_LOCK_SWITCH[7]"/0,0,0/530,40,18/);
+	DEF VAR0=(R/-800,800//$85601,$85601,,$85043/WR2,ac4/"panel_17_2_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[3]"/325,40,110/440,40,110//"UserGuide/section_4.html","S4D12");
+	DEF para_switch1=(I/*0=$85058,1=$85059//$85063,$85063,,/WR2,ac4/"panel_17_2_chs.png"/"/NC/_N_NC_GD2_ACX/PARA_LOCK_SWITCH[7]"/0,0,0/530,40,18/);
 
-	DEF VAR12=(R/-2000,2000//$85626,$85626,,$85043/WR2/"panel_17_7_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[22]"/325,70,110/440,70,110//"UserGuide/section_4.html","S4D13");
+	DEF VAR12=(R/-2000,2000//$85626,$85626,,$85043/WR2,ac4/"panel_17_7_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[22]"/325,70,110/440,70,110//"UserGuide/section_4.html","S4D13");
 
-	DEF VAR11=(R/0,80//$85604,$85604,,$85047/WR2/"panel_17_1_chs.png"/"/NC/_N_NC_GD2_ACX/WHEEL[19]"/325,140,110/440,140,110//"UserGuide/section_4.html","S4D10");
+	DEF VAR11=(R/0,80//$85604,$85604,,$85047/WR2,ac4/"panel_17_1_chs.png"/"/NC/_N_NC_GD2_ACX/WHEEL[19]"/325,140,110/440,140,110//"UserGuide/section_4.html","S4D10");
 
-	DEF VAR2=(R/0,50//$85602,$85602,,$85043/WR2/"panel_17_3_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[2]"/325,170,110/440,170,110//"UserGuide/section_4.html","S4D11");
-	DEF VAR7=(R/0,500//$85620,$85620,,$85043/WR2/"panel_17_5_chs.png"/"/NC/_N_NC_GD2_ACX/WHEEL[1]"/325,190,110/440,190,110//"UserGuide/section_4.html","S4D4");
-	DEF VAR8=(R/0,60//$85621,$85621,,$85046/WR2/"panel_17_6_chs.png"/"/NC/_N_NC_GD2_ACX/WHEEL[2]"/325,210,110/440,210,110//"UserGuide/section_4.html","S4D5");
+	DEF VAR2=(R/0,50//$85602,$85602,,$85043/WR2,ac4/"panel_17_3_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[2]"/325,170,110/440,170,110//"UserGuide/section_4.html","S4D11");
+	DEF VAR7=(R/0,500//$85620,$85620,,$85043/WR2,ac4/"panel_17_5_chs.png"/"/NC/_N_NC_GD2_ACX/WHEEL[1]"/325,190,110/440,190,110//"UserGuide/section_4.html","S4D4");
+	DEF VAR8=(R/0,60//$85621,$85621,,$85046/WR2/"panel_17_6_chs.png"/"/NC/_N_NC_GD2_ACX/WHEEL[2]"/325,210,110/440,210,110/,9/"UserGuide/section_4.html","S4D5");
 	DEF VAR9=(I/0,//$85600,$85600,,$85044/WR1//"/NC/_N_NC_GD2_ACX/WHEEL[20]"/325,230,110/440,230,110/);
 
 	DEF VAR1=(R///$85633,$85633,,$85043/WR1//"/NC/_N_NC_GD2_ACX/WHEEL[13]"/325,260,130/440,260,110/);

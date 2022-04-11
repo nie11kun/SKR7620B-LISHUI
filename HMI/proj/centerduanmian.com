@@ -3,21 +3,21 @@
 
 	DEF Z_IM=(R///$85119,$85119,,/WR1//"$AA_IM[Z]"/10,10,20/30,10,60/3);
 
-	DEF VAR1=(I/*0=$85166,1=$85167//$85170,$85170,,/WR2/"panel_32_1_chs.png"/"/NC/_N_NC_GD2_ACX/INI[104]"/360,10,70/460,10,80//"UserGuide/section_27.html","S27D3");
+	DEF VAR1=(I/*0=$85166,1=$85167//$85170,$85170,,/WR2,ac4/"panel_32_1_chs.png"/"/NC/_N_NC_GD2_ACX/INI[104]"/360,10,70/460,10,80//"UserGuide/section_27.html","S27D3");
 
 	;
-	DEF VAR2=(R///$85801,$85801,,$85043/WR2/"panel_32_2_chs.png"/"/NC/_N_NC_GD2_ACX/INI[44]"/60,40,202/160,40,110//"UserGuide/section_27.html","S27D1");
+	DEF VAR2=(R///$85801,$85801,,$85043/WR2,ac4/"panel_32_2_chs.png"/"/NC/_N_NC_GD2_ACX/INI[44]"/60,40,202/160,40,110//"UserGuide/section_27.html","S27D1");
 	DEF VAR3=(R///$85700,$85700,,/WR1///60,70,202/160,70,60//"UserGuide/section_27.html","S27D4");
 	DEF VAR4=(R///$85701,$85701,,/WR1///60,90,202/160,90,60//"UserGuide/section_27.html","S27D5");
-	DEF VAR6=(R///$85169,$85169,,/WR2/"panel_32_4_chs.png"/"/NC/_N_NC_GD2_ACX/PROCESS[49]"/60,120,202/160,120,60/6/"UserGuide/section_27.html","S27D6");
-	DEF VAR5=(R///$85158,$85158,,/WR2/"panel_32_4_chs.png"/"/NC/_N_NC_GD2_ACX/PROCESS[35]"/60,140,202/160,140,60//"UserGuide/section_27.html","S27D7");
+	DEF VAR6=(R///$85169,$85169,,/WR2,ac4/"panel_32_4_chs.png"/"/NC/_N_NC_GD2_ACX/PROCESS[49]"/60,120,202/160,120,60/6/"UserGuide/section_27.html","S27D6");
+	DEF VAR5=(R///$85158,$85158,,/WR2,ac4/"panel_32_4_chs.png"/"/NC/_N_NC_GD2_ACX/PROCESS[35]"/60,140,202/160,140,60//"UserGuide/section_27.html","S27D7");
 
 	;
-	DEF VAR7=(R///$85800,$85800,,$85043/WR2/"panel_32_3_chs.png"/"/NC/_N_NC_GD2_ACX/PROCESS[28]"/360,40,202/460,40,110//"UserGuide/section_27.html","S27D2");
+	DEF VAR7=(R///$85800,$85800,,$85043/WR2,ac4/"panel_32_3_chs.png"/"/NC/_N_NC_GD2_ACX/PROCESS[28]"/360,40,202/460,40,110//"UserGuide/section_27.html","S27D2");
 	DEF VAR8=(R///$85700,$85700,,/WR1///360,70,202/460,70,60//"UserGuide/section_27.html","S27D8");
 	DEF VAR9=(R///$85701,$85701,,/WR1///360,90,202/460,90,60//"UserGuide/section_27.html","S27D9");
-	DEF VAR11=(R///$85169,$85169,,/WR2/"panel_32_5_chs.png"/"/NC/_N_NC_GD2_ACX/PROCESS[48]"/360,120,202/460,120,60/6/"UserGuide/section_27.html","S27D10");
-	DEF VAR10=(R///$85158,$85158,,/WR2/"panel_32_5_chs.png"/"/NC/_N_NC_GD2_ACX/PROCESS[38]"/360,140,202/460,140,60//"UserGuide/section_27.html","S27D11");
+	DEF VAR11=(R///$85169,$85169,,/WR2,ac4/"panel_32_5_chs.png"/"/NC/_N_NC_GD2_ACX/PROCESS[48]"/360,120,202/460,120,60/6/"UserGuide/section_27.html","S27D10");
+	DEF VAR10=(R///$85158,$85158,,/WR2,ac4/"panel_32_5_chs.png"/"/NC/_N_NC_GD2_ACX/PROCESS[38]"/360,140,202/460,140,60//"UserGuide/section_27.html","S27D11");
 
 	DEF VAR12=(R////WR4//"/NC/_N_NC_GD2_ACX/PROCESS[21]"/0,0,0/0,0,0/);
 	DEF VAR13=(R////WR4//"/NC/_N_NC_GD2_ACX/PROCESS[58]"/0,0,0/0,0,0/);
@@ -118,28 +118,28 @@
 //M(Mask25/$85710/"panel_25_0_chs.png"/)
 
 	;
-	DEF VAR15=(I///$85203,,,/WR2//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[100]"/0,0,0/132,129,60//"UserGuide/section_27.html","S27D14");
-	DEF VAR16=(I///$85204,,,/WR2//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[244]"/0,0,0/222,129,60//"UserGuide/section_27.html","S27D14");
-	DEF VAR17=(I///$85205,,,/WR2//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[102]"/0,0,0/312,129,60//"UserGuide/section_27.html","S27D14");
-	DEF VAR18=(I///$85206,,,/WR2//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[245]"/0,0,0/402,129,60//"UserGuide/section_27.html","S27D14");
+	DEF VAR15=(I///$85203,,,/WR2//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[100]"/0,0,0/132,129,60/,9/"UserGuide/section_27.html","S27D14");
+	DEF VAR16=(I///$85204,,,/WR2,ac4//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[244]"/0,0,0/222,129,60//"UserGuide/section_27.html","S27D14");
+	DEF VAR17=(I///$85205,,,/WR2//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[102]"/0,0,0/312,129,60/,9/"UserGuide/section_27.html","S27D14");
+	DEF VAR18=(I///$85206,,,/WR2,ac4//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[245]"/0,0,0/402,129,60//"UserGuide/section_27.html","S27D14");
 	
 	;
-	DEF VAR19=(R///$85203,,,/WR2//"/NC/_N_NC_GD2_ACX/PROCESS[79]"/0,0,0/132,154,60//"UserGuide/section_27.html","S27D15");
-	DEF VAR20=(R///$85204,,,/WR2//"/NC/_N_NC_GD2_ACX/PROCESS[80]"/0,0,0/222,154,60//"UserGuide/section_27.html","S27D15");
-	DEF VAR21=(R///$85205,,,/WR2//"/NC/_N_NC_GD2_ACX/PROCESS[81]"/0,0,0/312,154,60//"UserGuide/section_27.html","S27D15");
-	DEF VAR22=(R///$85206,,,/WR2//"/NC/_N_NC_GD2_ACX/PROCESS[82]"/0,0,0/402,154,60//"UserGuide/section_27.html","S27D15");
+	DEF VAR19=(R///$85203,,,/WR2//"/NC/_N_NC_GD2_ACX/PROCESS[79]"/0,0,0/132,154,60/,9/"UserGuide/section_27.html","S27D15");
+	DEF VAR20=(R///$85204,,,/WR2,ac4//"/NC/_N_NC_GD2_ACX/PROCESS[80]"/0,0,0/222,154,60//"UserGuide/section_27.html","S27D15");
+	DEF VAR21=(R///$85205,,,/WR2//"/NC/_N_NC_GD2_ACX/PROCESS[81]"/0,0,0/312,154,60/,9/"UserGuide/section_27.html","S27D15");
+	DEF VAR22=(R///$85206,,,/WR2,ac4//"/NC/_N_NC_GD2_ACX/PROCESS[82]"/0,0,0/402,154,60//"UserGuide/section_27.html","S27D15");
 	
 	;
-	DEF VAR27=(R///$85203,,,/WR2//"/NC/_N_NC_GD2_ACX/PROCESS[85]"/0,0,0/132,179,60//"UserGuide/section_27.html","S27D16");
-	DEF VAR28=(R///$85204,,,/WR2//"/NC/_N_NC_GD2_ACX/PROCESS[86]"/0,0,0/222,179,60//"UserGuide/section_27.html","S27D16");
-	DEF VAR29=(R///$85205,,,/WR2//"/NC/_N_NC_GD2_ACX/PROCESS[87]"/0,0,0/312,179,60//"UserGuide/section_27.html","S27D16");
-	DEF VAR30=(R///$85206,,,/WR2//"/NC/_N_NC_GD2_ACX/PROCESS[88]"/0,0,0/402,179,60//"UserGuide/section_27.html","S27D16");
+	DEF VAR27=(R///$85203,,,/WR2,ac4//"/NC/_N_NC_GD2_ACX/PROCESS[85]"/0,0,0/132,179,60//"UserGuide/section_27.html","S27D16");
+	DEF VAR28=(R///$85204,,,/WR2,ac4//"/NC/_N_NC_GD2_ACX/PROCESS[86]"/0,0,0/222,179,60//"UserGuide/section_27.html","S27D16");
+	DEF VAR29=(R///$85205,,,/WR2,ac4//"/NC/_N_NC_GD2_ACX/PROCESS[87]"/0,0,0/312,179,60//"UserGuide/section_27.html","S27D16");
+	DEF VAR30=(R///$85206,,,/WR2,ac4//"/NC/_N_NC_GD2_ACX/PROCESS[88]"/0,0,0/402,179,60//"UserGuide/section_27.html","S27D16");
 
 	;
-	DEF VAR41=(I///$85203,,,/WR2//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[256]"/0,0,0/132,203,60//"UserGuide/section_27.html","S27D17");
-	DEF VAR42=(I///$85204,,,/WR2//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[257]"/0,0,0/222,203,60//"UserGuide/section_27.html","S27D17");
-	DEF VAR43=(I///$85205,,,/WR2//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[258]"/0,0,0/312,203,60//"UserGuide/section_27.html","S27D17");
-	DEF VAR44=(I///$85206,,,/WR2//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[259]"/0,0,0/402,203,60//"UserGuide/section_27.html","S27D17");
+	DEF VAR41=(I///$85203,,,/WR2,ac4//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[256]"/0,0,0/132,203,60//"UserGuide/section_27.html","S27D17");
+	DEF VAR42=(I///$85204,,,/WR2,ac4//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[257]"/0,0,0/222,203,60//"UserGuide/section_27.html","S27D17");
+	DEF VAR43=(I///$85205,,,/WR2,ac4//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[258]"/0,0,0/312,203,60//"UserGuide/section_27.html","S27D17");
+	DEF VAR44=(I///$85206,,,/WR2,ac4//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[259]"/0,0,0/402,203,60//"UserGuide/section_27.html","S27D17");
 	
 	;
 	DEF VAR37=(R///$85203,,,/WR1//"/NC/_N_NC_GD2_ACX/PROCESS[67]"/0,0,0/132,229,60//"UserGuide/section_27.html","S27D18");
@@ -148,17 +148,17 @@
 	DEF VAR40=(R///$85206,,,/WR1//"/NC/_N_NC_GD2_ACX/PROCESS[70]"/0,0,0/402,229,60//"UserGuide/section_27.html","S27D18");
 	
 	;
-	DEF VAR23=(R///,,,/WR2//"/NC/_N_NC_GD2_ACX/PROCESS[91]"/0,0,0/132,269,60//"UserGuide/section_27.html","S27D19");
-	DEF VAR24=(R///,,,/WR2//"/NC/_N_NC_GD2_ACX/PROCESS[92]"/0,0,0/222,269,60//"UserGuide/section_27.html","S27D19");
-	DEF VAR25=(R///,,,/WR2//"/NC/_N_NC_GD2_ACX/PROCESS[93]"/0,0,0/312,269,60//"UserGuide/section_27.html","S27D19");
-	DEF VAR26=(R///,,,/WR2//"/NC/_N_NC_GD2_ACX/PROCESS[94]"/0,0,0/402,269,60//"UserGuide/section_27.html","S27D19");
+	DEF VAR23=(R///,,,/WR2,ac4//"/NC/_N_NC_GD2_ACX/PROCESS[91]"/0,0,0/132,269,60//"UserGuide/section_27.html","S27D19");
+	DEF VAR24=(R///,,,/WR2,ac4//"/NC/_N_NC_GD2_ACX/PROCESS[92]"/0,0,0/222,269,60//"UserGuide/section_27.html","S27D19");
+	DEF VAR25=(R///,,,/WR2,ac4//"/NC/_N_NC_GD2_ACX/PROCESS[93]"/0,0,0/312,269,60//"UserGuide/section_27.html","S27D19");
+	DEF VAR26=(R///,,,/WR2,ac4//"/NC/_N_NC_GD2_ACX/PROCESS[94]"/0,0,0/402,269,60//"UserGuide/section_27.html","S27D19");
 
 	;
 	DEF VAR32=(R///,,,/WR4//"/NC/_N_NC_GD2_ACX/DRESSER[92]"/0,0,0/0,0,0/);
-	DEF VAR33=(I///$85203,,,/WR1//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[260]"/0,0,0/132,290,60//"UserGuide/section_27.html","S27D35");
-	DEF VAR34=(I///$85204,,,/WR1//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[261]"/0,0,0/222,290,60//"UserGuide/section_27.html","S27D35");
-	DEF VAR35=(I///$85205,,,/WR1//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[262]"/0,0,0/312,290,60//"UserGuide/section_27.html","S27D35");
-	DEF VAR36=(I///$85206,,,/WR1//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[263]"/0,0,0/402,290,60//"UserGuide/section_27.html","S27D35");
+	DEF VAR33=(I///$85203,,,/WR1,ac4//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[260]"/0,0,0/132,290,60//"UserGuide/section_27.html","S27D35");
+	DEF VAR34=(I///$85204,,,/WR1,ac4//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[261]"/0,0,0/222,290,60//"UserGuide/section_27.html","S27D35");
+	DEF VAR35=(I///$85205,,,/WR1,ac4//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[262]"/0,0,0/312,290,60//"UserGuide/section_27.html","S27D35");
+	DEF VAR36=(I///$85206,,,/WR1,ac4//"/NC/_N_NC_GD2_ACX/TECHNOLOGY[263]"/0,0,0/402,290,60//"UserGuide/section_27.html","S27D35");
 
 	;
 	DEF VAR10=(I/*0=$85703,1=$85704//$85203,,,/WR2//"/NC/_N_NC_GD2_ACX/PROCESS[73]"/0,0,0/132,103,60//"UserGuide/section_27.html","S27D34");
@@ -388,26 +388,26 @@
 	DEF Z_IM=(R///$85119,$85119,,/WR1//"$AA_IM[Z]"/10,30,20/30,30,60/3);
 
 	DEF VAR0=(R///$85366,$85366,,$85043/WR1//"/NC/_N_NC_GD2_ACX/DRESSER[129]"/110,10,110/200,10,110//"UserGuide/section_27.html","S27D20");
-	DEF ZUIDU=(R///$85724,$85724,,$85043/WR2/"panel_27_4_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[137]"/110,40,110/200,40,110//"UserGuide/section_27.html","S27D21");
+	DEF ZUIDU=(R///$85724,$85724,,$85043/WR2,ac4/"panel_27_4_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[137]"/110,40,110/200,40,110//"UserGuide/section_27.html","S27D21");
 
 	DEF WHEEL_STATUS=(I/*0=$85327,1=$85328//$85350,$85350,,/WR2//"/NC/_N_NC_GD2_ACX/DRESSER[130]"/330,10,110/440,10,60//"UserGuide/section_27.html","S27D22");
 
-	DEF VAR2=(I/0,1000//$85340,$85340,,/WR2//"/NC/_N_NC_GD2_ACX/DRESSER[95]"/330,40,110/440,40,60//"UserGuide/section_27.html","S27D23");
-	DEF VAR3=(R/0,0.5//$85308,$85308,,$85043/WR2//"/NC/_N_NC_GD2_ACX/DRESSER[97]"/330,60,110/440,60,110//"UserGuide/section_27.html","S27D24");
-	DEF VAR4=(R/0,1000//$85306,$85306,,$85045/WR2//"/NC/_N_NC_GD2_ACX/DRESSER[103]"/330,80,110/440,80,110//"UserGuide/section_27.html","S27D25");
+	DEF VAR2=(I/0,1000//$85340,$85340,,/WR2//"/NC/_N_NC_GD2_ACX/DRESSER[95]"/330,40,110/440,40,60/,9/"UserGuide/section_27.html","S27D23");
+	DEF VAR3=(R/0,0.5//$85308,$85308,,$85043/WR2,ac4//"/NC/_N_NC_GD2_ACX/DRESSER[97]"/330,60,110/440,60,110//"UserGuide/section_27.html","S27D24");
+	DEF VAR4=(R/0,1000//$85306,$85306,,$85045/WR2,ac4//"/NC/_N_NC_GD2_ACX/DRESSER[103]"/330,80,110/440,80,110//"UserGuide/section_27.html","S27D25");
 
-	DEF VAR5=(I/0,1000//$85341,$85341,,/WR2//"/NC/_N_NC_GD2_ACX/DRESSER[96]"/330,110,120/440,110,60//"UserGuide/section_27.html","S27D26");
-	DEF VAR6=(R/0,0.5//$85309,$85309,,$85043/WR2//"/NC/_N_NC_GD2_ACX/DRESSER[98]"/330,130,110/440,130,110//"UserGuide/section_27.html","S27D27");
-	DEF VAR7=(R/0,1000//$85307,$85307,,$85045/WR2//"/NC/_N_NC_GD2_ACX/DRESSER[104]"/330,150,110/440,150,110//"UserGuide/section_27.html","S27D28");
+	DEF VAR5=(I/0,1000//$85341,$85341,,/WR2//"/NC/_N_NC_GD2_ACX/DRESSER[96]"/330,110,120/440,110,60/,9/"UserGuide/section_27.html","S27D26");
+	DEF VAR6=(R/0,0.5//$85309,$85309,,$85043/WR2,ac4//"/NC/_N_NC_GD2_ACX/DRESSER[98]"/330,130,110/440,130,110//"UserGuide/section_27.html","S27D27");
+	DEF VAR7=(R/0,1000//$85307,$85307,,$85045/WR2,ac4//"/NC/_N_NC_GD2_ACX/DRESSER[104]"/330,150,110/440,150,110//"UserGuide/section_27.html","S27D28");
 
-	DEF VAR8=(R///$85715,$85715,,/WR2/"panel_27_2_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[101]"/330,180,110/440,180,60//"UserGuide/section_27.html","S27D29");
-	DEF VAR9=(R///$85716,$85716,,/WR2/"panel_27_3_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[102]"/330,200,110/440,200,60//"UserGuide/section_27.html","S27D30");
+	DEF VAR8=(R///$85715,$85715,,/WR2/"panel_27_2_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[101]"/330,180,110/440,180,60/,9/"UserGuide/section_27.html","S27D29");
+	DEF VAR9=(R///$85716,$85716,,/WR2/"panel_27_3_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[102]"/330,200,110/440,200,60/,9/"UserGuide/section_27.html","S27D30");
 	
-	DEF VAR15=(R/0,80//$85317,$85317,,$85046/WR1//"/NC/_N_NC_GD2_ACX/WHEEL_LINESPEED_DRESS[42]"/330,230,110/440,230,110//"UserGuide/section_27.html","S27D31");
-	DEF VAR16=(I///$85318,$85318,,$85044/WR1//"/NC/_N_NC_GD2_ACX/DRESSER[131]"/330,250,110/440,250,110//"UserGuide/section_27.html","S27D36");
+	DEF VAR15=(R/0,80//$85317,$85317,,$85046/WR1,ac4//"/NC/_N_NC_GD2_ACX/WHEEL_LINESPEED_DRESS[42]"/330,230,110/440,230,110//"UserGuide/section_27.html","S27D31");
+	DEF VAR16=(I///$85318,$85318,,$85044/WR1,ac4//"/NC/_N_NC_GD2_ACX/DRESSER[131]"/330,250,110/440,250,110//"UserGuide/section_27.html","S27D36");
 
-    DEF VAR11=(R///$85718,$85718,,/WR2//"/NC/_N_NC_GD2_ACX/DRESSER[109]"/330,280,110/440,280,60//"UserGuide/section_27.html","S27D32");
-	DEF VAR10=(R///$85717,$85717,,/WR2//"/NC/_N_NC_GD2_ACX/DRESSER[127]"/330,300,110/440,300,60//"UserGuide/section_27.html","S27D33");
+    DEF VAR11=(R///$85718,$85718,,/WR2//"/NC/_N_NC_GD2_ACX/DRESSER[109]"/330,280,110/440,280,60/,9/"UserGuide/section_27.html","S27D32");
+	DEF VAR10=(R///$85717,$85717,,/WR2//"/NC/_N_NC_GD2_ACX/DRESSER[127]"/330,300,110/440,300,60/,9/"UserGuide/section_27.html","S27D33");
 
 	DEF VAR14=(R////WR4//"/NC/_N_NC_GD2_ACX/DRESSER[92]"/0,0,0/0,0,0/);
 	DEF QCHECK=(I////WR4//"/Plc/Q113.5"/0,0,0/0,0,0);
